@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Biker.vn - For Biker Lover </title>
+
+	<!-- CSS -->
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+	<link rel="stylesheet" th:href="@{/css/commerce.css}">
+	<link rel="stylesheet" th:href="@{/css/linearicons.css}">
+	<link rel="stylesheet" th:href="@{/css/nice-select.css}">
+	<link rel="stylesheet" th:href="@{/css/nouislider.min.css}">
+	<link rel="stylesheet" th:href="@{/css/owl.carousel.css}">
+	<link rel="stylesheet" th:href="@{/css/themify-icons.css}">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!-- Start Header Area -->
+	<header class="header">
+        <!-- Main Navigation -->
+        <div class="main_nav_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 ">
+                        <div class="logo_container">
+                            <a href="home.html"><img th:src="@{/img/logo2.jpg}"></a>
+                        </div>
+                        <nav class="navbar">
+                            <ul class="navbar_menu">
+                                <li><a th:href="@{/home}">Home</a></li>
+                                <li><a th:href="@{/items}">Category</a></li>
+                                <li><a th:href="@{/blogs}">What's New</a></li>
+                                <li><a th:href="@{/contact}">contact</a></li>
+                            </ul>
+                            <ul class="navbar_user">
+                                <li><a class="search"><span class="fa fa-search" id="search"></span></a></li>
+                                <li><a th:href="@{/admin/login}"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                                <li class="checkout">
+                                    <a href="cart.html">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <span id="checkout_items" class="checkout_items">2</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="hamburger_container">
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="hamburger_menu">
+        <div class="hamburger_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+        <div class="hamburger_menu_content text-right">
+            <ul class="menu_top_nav">
+                <li class="menu_item"><a th:href="@{/home}">Home</a></li>
+                <li class="menu_item"><a th:href="@{/items}">Category</a></li>
+                <li class="menu_item"><a th:href="@{/blogs}">What's New</a></li>
+                <li class="menu_item"><a th:href="@{/contact}">contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="search_input" id="search_input_box">
+        <div class="container">
+            <form class="d-flex justify-content-between">
+                <input type="text" class="form-control" id="search_input" placeholder="Search Here">
+                <button type="submit" class="btn"></button>
+                <span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
+            </form>
+        </div>
+    </div>
+    <!-- End Header Area -->
+
+	<!-- Start Banner Area -->
+	<section class="banner-area" th:style="'background-image: url(' + @{/img/banner/banner6.jpg} + ')'">
+		<div class="container">
+			<div class="banner-details d-flex flex-wrap align-items-center justify-content-center">
+				<div class="col-first">
+					<h1><span></span>What's New</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Banner Area -->
+
+	<!--================Blog Area =================-->
+    <section class="blog_area single-post-area section_gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 posts-list">
+                    <div class="single-post row">
+                        <div class="col-lg-12">
+                            <div class="feature-img">
+                                <img class="img-fluid" th:src="@{/img/blog/banner2.jpg}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-3  col-md-3">
+                            <div class="blog_info text-right">
+                                <div class="post_tag">
+                                    <a href="#">Food,</a>
+                                    <a class="active" href="#">Technology,</a>
+                                    <a href="#">Politics,</a>
+                                    <a href="#">Lifestyle</a>
+                                </div>
+                                <ul class="blog_meta list">
+                                    <li><a href="#">12 Dec, 2018<i class="lnr lnr-calendar-full"></i></a></li>
+                                </ul>
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 blog_details">
+                            <h2>Astronomy Binoculars A Great Alternative</h2>
+                            <p class="excert">
+                                MCSE boot camps have its supporters and its detractors. Some people do not understand
+                                why you should have to spend money on boot camp when you can get the MCSE study
+                                materials yourself at a fraction.
+                            </p>
+                            <p>
+                                Boot camps have its supporters and its detractors. Some people do not understand why
+                                you should have to spend money on boot camp when you can get the MCSE study materials
+                                yourself at a fraction of the camp price. However, who has the willpower to actually
+                                sit through a self-imposed MCSE training. who has the willpower to actually sit through
+                                a self-imposed
+                            </p>
+                            <p>
+                                Boot camps have its supporters and its detractors. Some people do not understand why
+                                you should have to spend money on boot camp when you can get the MCSE study materials
+                                yourself at a fraction of the camp price. However, who has the willpower to actually
+                                sit through a self-imposed MCSE training. who has the willpower to actually sit through
+                                a self-imposed
+                            </p>
+                        </div>
+                        <div class="col-lg-12">
+                            <p>
+                                MCSE boot camps have its supporters and its detractors. Some people do not understand
+                                why you should have to spend money on boot camp when you can get the MCSE study
+                                materials yourself at a fraction of the camp price. However, who has the willpower to
+                                actually sit through a self-imposed MCSE training.
+                            </p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <img class="img-fluid" th:src="@{/img/blog/banner2.jpg}" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <img class="img-fluid" th:src="@{/img/blog/banner2.jpg}" alt="">
+                                </div>
+                                <div class="col-lg-12 mt-25">
+                                    <p>
+                                        MCSE boot camps have its supporters and its detractors. Some people do not
+                                        understand why you should have to spend money on boot camp when you can get the
+                                        MCSE study materials yourself at a fraction of the camp price. However, who has
+                                        the willpower.
+                                    </p>
+                                    <p>
+                                        MCSE boot camps have its supporters and its detractors. Some people do not
+                                        understand why you should have to spend money on boot camp when you can get the
+                                        MCSE study materials yourself at a fraction of the camp price. However, who has
+                                        the willpower.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navigation-area">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
+                                <div class="thumb">
+                                    <a href="#"><img class="img-fluid" th:src="@{/img/blog/banner2.jpg}" alt=""></a>
+                                </div>
+                                <div class="arrow">
+                                    <a href="#"><span class="lnr text-white lnr-arrow-left"></span></a>
+                                </div>
+                                <div class="detials">
+                                    <p>Prev Post</p>
+                                    <a href="#">
+                                        <h4>Space The Final Frontier</h4>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
+                                <div class="detials">
+                                    <p>Next Post</p>
+                                    <a href="#">
+                                        <h4>Telescopes 101</h4>
+                                    </a>
+                                </div>
+                                <div class="arrow">
+                                    <a href="#"><span class="lnr text-white lnr-arrow-right"></span></a>
+                                </div>
+                                <div class="thumb">
+                                    <a href="#"><img class="img-fluid" th:src="@{/img/blog/banner2.jpg}" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog_right_sidebar">
+                        <aside class="single_sidebar_widget popular_post_widget">
+                                <h3 class="widget_title">Popular Posts</h3>
+                                <div class="media post_item">
+                                        <img th:src="@{/img/blog/banner2.jpg}" alt="post">
+                                        <div class="media-body">
+                                                <a th:href="@{/blogs}">
+                                                        <h3>Space The Final Frontier</h3>
+                                                </a>
+                                                <p>02 Hours ago</p>
+                                        </div>
+                                </div>
+                                <div class="media post_item">
+                                        <img th:src="@{/img/blog/banner2.jpg}" alt="post">
+                                        <div class="media-body">
+                                            <a th:href="@{/blogs}">
+                                                        <h3>The Amazing Hubble</h3>
+                                                </a>
+                                                <p>02 Hours ago</p>
+                                        </div>
+                                </div>
+                                <div class="media post_item">
+                                        <img th:src="@{/img/blog/banner2.jpg}" alt="post">
+                                        <div class="media-body">
+                                                <a th:href="@{/blogs}">
+                                                        <h3>Astronomy Or Astrology</h3>
+                                                </a>
+                                                <p>03 Hours ago</p>
+                                        </div>
+                                </div>
+                                <div class="media post_item">
+                                    <img th:src="@{/img/blog/banner2.jpg}" alt="post">
+                                        <div class="media-body">
+                                                <<a th:href="@{/blogs}">
+                                                        <h3>Asteroids telescope</h3>
+                                                </a>
+                                                <p>01 Hours ago</p>
+                                        </div>
+                                </div>
+                                <div class="br"></div>
+                        </aside>
+                        <aside class="single-sidebar-widget tag_cloud_widget">
+                                <h4 class="widget_title">Tag Clouds</h4>
+                                <ul class="list">
+                                        <li><a href="#">Technology</a></li>
+                                        <li><a href="#">Fashion</a></li>
+                                        <li><a href="#">Architecture</a></li>
+                                        <li><a href="#">Fashion</a></li>
+                                        <li><a href="#">Food</a></li>
+                                        <li><a href="#">Technology</a></li>
+                                        <li><a href="#">Lifestyle</a></li>
+                                        <li><a href="#">Art</a></li>
+                                        <li><a href="#">Adventure</a></li>
+                                        <li><a href="#">Food</a></li>
+                                        <li><a href="#">Lifestyle</a></li>
+                                        <li><a href="#">Adventure</a></li>
+                                </ul>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================Blog Area =================-->
+	
+	<!-- Start footer Area -->
+	<footer class="footer-area section_gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6  col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h4>Contact Us</h4>
+						<p>
+							<p> Make by Star Catchers with love <br></p>
+							<p>Address :158A Le Loi <br></p>
+							<p>Phone : 0123456789 <br></p>
+							<p>Email :Biker@gmail.com</p>
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4  col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h4>Newsletter</h4>
+						<p>Stay update with our latest</p>
+						<div class="" id="mc_embed_signup">
+
+							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+							 method="get" class="form-inline">
+
+								<div class="d-flex flex-row">
+
+									<input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
+									 required="" type="email">
+
+
+									<button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+									<div style="position: absolute; left: -5000px;">
+										<input tabindex="-1" value="" type="text">
+									</div>
+								</div>
+								<div class="info"></div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h4>Follow Us</h4>
+						<p>Let us be social</p>
+						<div class="footer-social d-flex align-items-center">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End footer Area -->
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script th:src="@{/js/main.js}"></script>
+	<script th:src="@{/js/bootstrap.min.js}"></script>
+	<script th:src="@{/js/jquery-2.2.4.min.js}"></script>
+	<script th:src="@{/js/scroll.js}"></script>
+</body>
+</html>
+
+
+
+
